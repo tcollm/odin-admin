@@ -15,6 +15,7 @@ body {
     grid-template-columns: 1fr 5fr;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.2rem;
+    height: 100vh;
 }
 
 button {
@@ -91,7 +92,40 @@ svg {
 }
 
 .header {
+    border: 2px solid purple;
     grid: 1 / 1 / 2 / 1;
+    padding: 16px 0px 0px 32px;
+    /* top right bottom left */
+}
+
+.header-top {
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+.header-top .searchbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-top .searchbar input {
+    border: none;
+    background-color: var(--gray);
+    border-radius: 12px;
+    padding: 6px;
+    width: max(300px, 40vw);
+}
+
+.header-top .top-right {
+    display: flex;
+}
+
+.header-bottom {
+    border: 2px solid green;
+    display: flex;
 }
 
 .main {
